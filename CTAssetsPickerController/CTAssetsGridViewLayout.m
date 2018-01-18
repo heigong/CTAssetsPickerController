@@ -37,8 +37,8 @@
         CGFloat onePixel = (scale == 3.0) ? (2.0 / scale) : (1.0 / scale);
         
         // spacing is as small as possible
-        self.minimumInteritemSpacing = onePixel;
-        self.minimumLineSpacing = onePixel;
+        self.minimumInteritemSpacing = onePixel * 2;
+        self.minimumLineSpacing = onePixel * 2;
         
         // total spaces between items (in pixel)
         CGFloat spaces  = self.minimumInteritemSpacing * (numberOfColumns - 1);
