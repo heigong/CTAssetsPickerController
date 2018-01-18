@@ -78,10 +78,10 @@
     [self addSubview:self.badge];
     
     UILabel *duration = [UILabel newAutoLayoutView];
-    duration.font = [UIFont preferredFontForTextStyle:UIFontTextStyleCaption2];
+    duration.font = [[UIFont preferredFontForTextStyle:UIFontTextStyleHeadline] fontWithSize:12];
     duration.textColor = [UIColor whiteColor];
     duration.lineBreakMode = NSLineBreakByTruncatingTail;
-    duration.layoutMargins = UIEdgeInsetsMake(2.5, 2.5, 2.5, 2.5);
+    duration.layoutMargins = UIEdgeInsetsMake(3, 3, 3, 3);
     self.duration = duration;
     
     [self addSubview:self.duration];
